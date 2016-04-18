@@ -15,6 +15,9 @@ gem 'bcrypt', '~> 3.1.7'
 # To use Jbuilder templates for JSON
 gem 'jbuilder'
 
+gem 'pry'
+
+gem 'rack-cors', :require => 'rack/cors'
 # Use unicorn as the app server
 # gem 'unicorn'
 

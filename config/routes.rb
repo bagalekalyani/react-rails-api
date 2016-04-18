@@ -3,7 +3,11 @@ Rails.application.routes.draw do
 
     namespace :api, defaults: {format: 'json'} do
         namespace :v1 do
-            resources :users
+            resources :users do
+                collection do
+                    post 'signup', via: :options
+                end
+            end
         end
     end
 
