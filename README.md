@@ -1,2 +1,2 @@
 # react-rails
-Rails API integration 
+Rails API integration (work in progress)
