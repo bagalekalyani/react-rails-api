@@ -1,16 +1,17 @@
 Rails.application.routes.draw do
 
-
-    namespace :api, defaults: {format: 'json'} do
-        namespace :v1 do
-            resources :users do
-                collection do
-                    post 'signup', via: :options
-                    post 'login'
-                end
-            end
+  namespace :api, defaults: {format: 'json'} do
+    puts "hii"
+    namespace :v1 do
+      resources :apidocs, only: [:index]
+      resources :users do
+        collection do
+          post 'signup', via: :options
+          post 'login'
         end
+      end
     end
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

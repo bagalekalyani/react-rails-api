@@ -20,6 +20,8 @@ gem 'pry'
 gem 'bcrypt-ruby', :require => 'bcrypt'
 
 gem 'rack-cors', :require => 'rack/cors'
+
+gem 'swagger-blocks'
 # Use unicorn as the app server
 # gem 'unicorn'
 
